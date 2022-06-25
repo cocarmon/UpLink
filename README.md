@@ -4,7 +4,7 @@ UpLink is a chrome extension used for copying, storing, and pasting multiple lin
 
 ## Installation
 
-It can be found on the chrome web store.(Pending)
+It can be found on the chrome web store.[Click Here](https://chrome.google.com/webstore/detail/uplink/nododegcpoanlijiclligefbpmnhdham)
 
 ## Usage
 
