@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "version": "1.1",
+    "description": "Copy and Paste multiple links",
+    "name": "UpLink",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icons/link.png"
+    },
+    "icons":{
+        "48": "icons/64Icon.png",
+        "128": "icons/UpLinkIcon.png"
+    },
+    "background": {
+    "service_worker": "./js/background.js"
+    },
+    "content_scripts":[{
+        "matches": ["https://*/*"],
+        "js": ["./js/content-script.js"]
+    }],
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "tabs"
+    ],
+    "commands":{
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Alt+Shift+Y",
+                "mac": "Command+Shift+Y"
+                }
+            },
+            "copy-url":{
+                "suggested_key":{
+                    "windows": "Ctrl+Shift+U",
+                    "mac": "Command+Shift+U"
+                },
+                "description": "Copies the current pages url"
+            }
+        
+    }
+}
