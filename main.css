@@ -223,6 +223,14 @@ button:hover{
   font-weight: bold;
   color: white;
 }
+.info-btn{
+  position: absolute;
+  top: 285px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 70%;
+}
 
 .feat-cont{
   text-align: left;
