@@ -19,14 +19,7 @@ body{
   padding: 0px;
 }
 
-a, a:visited{
-  color:blue;
-  text-decoration: none;
-}
 
-a:active{
-  color:green;
-}
 header {
   text-align: center;
 }
@@ -35,7 +28,9 @@ header {
   width: 250px;
   margin: 15px;
 }
-
+.container__subtitle{
+  font-size: 18px;
+}
 /* Navigation */
 
 .nav {
@@ -98,13 +93,14 @@ a:hover {
 }
 
 
-.icon-premium {
-  width: 32px;
-  grid-column: 3;
+.icon-share {
+width: 34px;
+   grid-column: 3;
   grid-row: 1/2;
 }
 
-#premium {
+#share {
+  margin-top: -2px;
   grid-column: 3;
   grid-row: 3;
 }
@@ -142,8 +138,14 @@ a:hover {
   overflow-y:auto;
   overflow-x:hidden;
   background: white;
+  border-radius: 10px;
 }
 
+.scroll-highlight a,a:visited,a:active{
+   color: blue;
+    text-decoration: none;
+
+}
 .scroll-highlight::-webkit-scrollbar {
   width: 15px;
 }
@@ -190,14 +192,17 @@ button:hover{
   background-color: rgb(197, 194, 194);
 }
 
-/* Premium Page */
+/* Share Page */
 .pre-cont{
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   text-align: center;
 }
-.pre-additions{
-  font-size: 18px;
+.container__description{
+  font-size: 15px;
+}
+.container__description a{
+  color:white;
 }
 
 .pre-benefits {
@@ -211,18 +216,46 @@ button:hover{
   margin-right: 40px;
 }
 .pre-pricing{
+  justify-self: center;
   grid-row: 7;
   background-color: #03a9f4;
   border: none;
   border-radius: 10px;
   font-size: 14px;
   list-style: none;
-  padding: 15px;
+  padding: 10px;
+  width: 50%;
+}
+.container--website{
+  background:#03a9f4;
+  color: white;
+  padding: 2px;
+}
+
+.container--referral{
+  font-size: 14px;
+  font-weight: 600;
+  grid-row: 4;
+}
+.container--referral p{
+  margin-bottom: 30px;
+}
+.container__email{
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: solid grey 2px;
 }
 .pre-pricing, .pre-pricing:visited{
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
+
+
+/* Info Page */
 .info-btn{
   position: absolute;
   top: 285px;
