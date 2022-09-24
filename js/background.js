@@ -2,9 +2,9 @@
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
-    id: "UpLink",
-    title: "Copy to UpLink",
-    contexts: ["link"],
+    id: 'UpLink',
+    title: 'Copy to UpLink',
+    contexts: ['link'],
   });
 });
 
@@ -16,6 +16,7 @@ chrome.contextMenus.onClicked.addListener(function (OnClickData) {
 });
 
 chrome.commands.onCommand.addListener(function (command) {
+  console.log(`Command "${command}" called`);
   if (command) {
     // Grabs current url
     chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
@@ -26,12 +27,12 @@ chrome.commands.onCommand.addListener(function (command) {
 });
 
 const storageSet = function (newUrl) {
-  chrome.storage.sync.get(["key"], function (result) {
+  chrome.storage.sync.get(['key'], function (result) {
     const previousLinks = result.key ?? [];
     if (newUrl) {
       previousLinks.push(newUrl);
       chrome.storage.sync.set({ key: previousLinks }, () => {
-        if (chrome.runtime.lastError) console.log("Error setting");
+        if (chrome.runtime.lastError) console.log('Error setting');
       });
     }
   });
