@@ -1,3 +1,9 @@
+html{
+  width: 100%;
+  border-right: none;
+  outline: none;
+  
+}
 *{
   margin: 0px;
 }
@@ -8,11 +14,17 @@
   padding: 10px;
 }
 
+body{
+  border-image-outset: 0px;
+  box-sizing: border-box; 
+}
+
+
 /* pre-page */
 .pageContainer{
-  box-sizing: border-box;
   color: #03a9f4;
   border: 10px solid #03a9f4;
+  
 }
 
 .pageContainer__grid{
@@ -23,11 +35,6 @@
 
 
 /* Common */
-body{
-  padding: 0px;
-}
-
-
 header {
   text-align: center;
 }
@@ -40,9 +47,9 @@ header {
   font-size: 18px;
 }
 /* Navigation */
-
 .nav {
   padding:0px;
+  height: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -50,33 +57,32 @@ header {
   font-weight: bold;
   text-align: center;
   background-color: white;
+  align-items: center;
+  border-top: 3px solid rgba(0, 0, 0, 0.462);
 }
-
-.nav li {
-  list-style: none;
-}
-
-.nav a {
-  color: #03a9f4;
-  font-size: 14px;
+.nav a{
+  text-decoration: none;
+  color:#03a9f4;
 }
 .nav a:active{
   color: #03a9f4;
 }
+.nav a:hover{
+  background-color: rgba(150, 148, 148, 0.37);
+}
+.nav li {
+  list-style: none;
+}
+
 .nav img {
   opacity: .7;
 }
 
-.nav a:active,
-a:hover {
-  text-decoration: underline;
-}
-
 .navInfo{
-  border-right: 4px solid rgba(221, 220, 220, 0.48);
   grid-column: 1;
   grid-row: 1;
-  padding-top: 4px
+  padding-top: 5px;
+  height: 100%;
 }
 .icon-settings{
   grid-column: 1;
@@ -94,15 +100,31 @@ a:hover {
   grid-column: 2;
   grid-row: 3;
 }
-
-.navLinks{
-  border-right: 4px solid rgba(221, 220, 220, 0.48);
+.rightBorder{
+  grid-column: 1;
+  grid-row: 1;
+  height: 105%;
+  width: 3px;
+  background-color: rgba(0, 0, 0, 0.462);
+  justify-self: end;
+}
+.leftBorder {
   grid-column: 2;
   grid-row: 1;
-  padding-top: 4px
+  height: 105%;
+  width: 3px;
+  background-color: rgba(0, 0, 0, 0.462);
+  justify-self: end;
 }
-
-
+.navLinks{
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 5px;
+    height: 100%;}
+/* 
+.active-card{
+  background: rgba(150, 148, 148, 0.484);
+} */
 .icon-share {
 width: 34px;
    grid-column: 3;
@@ -118,7 +140,8 @@ width: 34px;
 .navShare{
   grid-column: 3;
   grid-row: 1;
-  padding-top: 4px
+  padding-top: 5px;
+    height: 100%;
 }
 
 

@@ -16,7 +16,6 @@ chrome.contextMenus.onClicked.addListener(function (OnClickData) {
 });
 
 chrome.commands.onCommand.addListener(function (command) {
-  console.log(`Command "${command}" called`);
   if (command) {
     // Grabs current url
     chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
