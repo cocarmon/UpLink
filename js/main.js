@@ -63,7 +63,7 @@ class Setup {
           cur.remove();
         }
       });
-      renameButton.addEventListener('click', (e) => {
+      renameBtn.addEventListener('click', (e) => {
         if (cur.classList.contains('sel')) {
           this.renameLink(renamedArr, cur);
           cur.classList.remove('sel');
