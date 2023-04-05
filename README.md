@@ -1,10 +1,12 @@
 # UpLink
 
-UpLink is a chrome extension used for copying, storing, and pasting multiple links
+UpLink is a chrome extension used for link management this includes copying, storing, hyperlinking, and pasting multiple links. 
 
 ## Installation
 
-It can be found on the chrome web store.[Click Here](https://chrome.google.com/webstore/detail/uplink/nododegcpoanlijiclligefbpmnhdham)
+It can be found on the chrome web store.
+
+[Click Here](https://chrome.google.com/webstore/detail/uplink/nododegcpoanlijiclligefbpmnhdham)
 
 ## Usage
 
@@ -27,5 +29,8 @@ It can be found on the chrome web store.[Click Here](https://chrome.google.com/w
 
 ## Warnings
 
-1. Won't work if the text is underlined for an error.
+1. Hyperlinking won't work if the text is underlined for an error.
 2. Some messaging platforms don't allow hyperlinks you will have to send the link directly
+
+## Learned
+1. From a technical perspective UpLink accomplishes everything that I set out to solve. The issue is taking it to the next level, granted this is a small chrome extension, but there is always things you can do to improve. The problem here is lack of communication with current users, there's really no way for us to reach out to who is using it. This leaves me in the dark on future features and I don't want to build features that aren't user centric.
